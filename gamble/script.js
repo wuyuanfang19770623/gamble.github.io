@@ -47,7 +47,8 @@ startButton.onclick = () => {
 //按exit键
 let exitButton = document.getElementById('endGameButton');
 exitButton.onclick = () => {
-  lable = 0;
+  clearInterval(interval);
+  lable = 0;  
   result.innerText = '游戏结束';
   playerScore = 0;
   computerScore = 0;
